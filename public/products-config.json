@@ -1,0 +1,27 @@
+[
+  {
+    "name": "platano",
+    "gram_price": 16,
+    "weight_step": 10
+  },
+  {
+    "name": "manzana",
+    "gram_price": 20,
+    "weight_step": 5
+  },
+  {
+    "name": "pera",
+    "gram_price": 15,
+    "weight_step": 10
+  },
+  {
+    "name": "naranja",
+    "gram_price": 12,
+    "weight_step": 8
+  },
+  {
+    "name": "kiwi",
+    "gram_price": 22,
+    "weight_step": 5
+  }
+]

@@ -1,0 +1,35 @@
+.product {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.productLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.productPrice {
+  font-size: 0.9em;
+  color: #4A90E2; /* Un color azul para el precio */
+}
+
+.totalCost {
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #4A90E2; /* Un color azul para el fondo */
+  color: white;
+  border-radius: 8px;
+}
+
+input[type="checkbox"]:hover,
+input[type="number"]:hover,
+input[type="checkbox"]:focus,
+input[type="number"]:focus {
+    border-color: #4A90E2; /* Un color azul para el borde al hacer hover o focus */
+}
