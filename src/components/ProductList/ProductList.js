@@ -8,7 +8,15 @@ const ProductList = () => {
     const [products, setProducts] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredProducts, setFilteredProducts] = useState([]);
+    const [showOnlySelected, setShowOnlySelected] = useState(false);
 
+    const toggleShowSelected = () => {
+        setShowOnlySelected(prevShowOnlySelected => !prevShowOnlySelected);
+    };
+
+    const displayedProducts = showOnlySelected
+        ? filteredProducts.filter(product => selectedProducts.has(product.id))
+        : filteredProducts;
 
     const handleWeightChange = (productId, weight) => {
       setSelectedWeights(prevWeights => ({
@@ -62,17 +70,24 @@ const ProductList = () => {
     };
 
     return (
-        <div>
-            <input
-                type="text"
-                placeholder="Buscar producto..."
-                value={searchTerm}
-                onChange={handleSearchChange}
-            />
-            {filteredProducts.map((product) => (
+        <div className={styles.mainContainer}>
+            <div className={styles.topBar}>
+                <button className={styles.button} onClick={toggleShowSelected}>
+                    {showOnlySelected ? 'Mostrar Todos los Productos' : 'Mostrar Solo Seleccionados'}
+                </button>
+                <input
+                    type="text"
+                    placeholder="Buscar producto..."
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                />
+            </div>
+            
+            {displayedProducts.map((product) => (
                 <div className={styles.product} key={product.id}>
                     <label className={styles.productLabel}>
                     <input
+                            className={styles.weightInput}
                             type="checkbox"
                             checked={selectedProducts.has(product.id)}
                             onChange={() => toggleProductSelection(product)}

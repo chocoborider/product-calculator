@@ -1,3 +1,9 @@
+.mainContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .product {
   margin-bottom: 15px;
   padding: 15px;
@@ -18,13 +24,14 @@
 }
 
 .totalCost {
-  margin-top: 30px;
-  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
   text-align: center;
-  font-size: 1.4em;
-  background-color: #4A90E2; /* Un color azul para el fondo */
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4A90E2;
   color: white;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .weightSelectorContainer {
@@ -38,4 +45,25 @@ input[type="number"]:hover,
 input[type="checkbox"]:focus,
 input[type="number"]:focus {
     border-color: #4A90E2; /* Un color azul para el borde al hacer hover o focus */
+}
+
+.button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
