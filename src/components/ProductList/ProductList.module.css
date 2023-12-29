@@ -27,6 +27,12 @@
   border-radius: 8px;
 }
 
+.weightSelectorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 input[type="checkbox"]:hover,
 input[type="number"]:hover,
 input[type="checkbox"]:focus,
