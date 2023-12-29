@@ -36,8 +36,13 @@
 
 .weightSelectorContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.priceContainer {
+  margin-top: 10px;
 }
 
 input[type="checkbox"]:hover,

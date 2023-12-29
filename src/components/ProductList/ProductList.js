@@ -102,7 +102,7 @@ const ProductList = () => {
                                 weightStep={product.weight_step}
                             />
                             {selectedWeights[product.id] > 0 && (
-                                <div>
+                                <div className={styles.priceContainer}>
                                      Precio: {calculatePrice(product.id, selectedWeights[product.id])}$
                                 </div>
                             )}
