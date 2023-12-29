@@ -48,7 +48,7 @@
     "provider": "Pricesmart"
   },
   {
-    "name": "cuña 3 quesos",
+    "name": "Cuña 3 quesos",
     "gram_price": 56.5,
     "weight_step": 600,
     "provider": "Pricesmart"
@@ -57,6 +57,48 @@
     "name": "Queseria de mi sin ti quesos variados (3)",
     "gram_price": 56.5,
     "weight_step": 600,
+    "provider": "Pricesmart"
+  },
+  {
+    "name": "Colby Jack Centurion",
+    "gram_price": 59.33,
+    "weight_step": 150,
+    "provider": "Carulla"
+  },
+  {
+    "name": "Provolone belgioioso",
+    "gram_price": 65.5,
+    "weight_step": 680,
+    "provider": "Pricesmart"
+  },
+  {
+    "name": "Bandeja de quesos variados (4 tipos)",
+    "gram_price": 66.04,
+    "weight_step": 907,
+    "provider": "Pricesmart"
+  },
+  {
+    "name": "Gouda ahumado",
+    "gram_price": 66.5,
+    "weight_step": 600,
+    "provider": "Pricesmart"
+  },
+  {
+    "name": "Muenster tajado",
+    "gram_price": 67.47,
+    "weight_step": 793,
+    "provider": "Pricesmart"
+  },
+  {
+    "name": "Havarti Rebanado",
+    "gram_price": 67.47,
+    "weight_step": 793,
+    "provider": "Pricesmart"
+  },
+  {
+    "name": "Queso Azul Danés",
+    "gram_price": 70,
+    "weight_step": 250,
     "provider": "Pricesmart"
   },
   {
